@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script type="text/javascript" src="js/validacion.js"></script>
+    <link rel="icon" type="image/jpg" href="">
+    <title>Formulario</title>
+</head>
+
+    <form action="" method="POST" id="contacto-frm" name="contacto-frm">
+    <!-- objetos trabajan en conjunto -->
+    <fieldset> 
+        <h1>contacto</h1>
+        <div id="contenedor">
+            <!-- label etiqueta para escribir descripcion de lo que se solicita -->
+            <!-- input digitacion y entrada de datos -->
+            <!-- type tipo de dato de entrada, Texto, radio, numerico, booleano, date, password, checkbok etc-->
+            <!-- requierd se obliga al llenado del campo -->
+            <!-- en el caso del campo edad este deberia ser de tipo numerico -->
+            <!-- seria bueno darle un largo a los input con zise -->
+            <!-- la clase button es para enviar la información recibida en elis input y poder hacer validaciones -->
+
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre_txt" id="nombre" class="cambio" requierid>
+            <br><br>
+            
+            <label>Edad</label>
+            <input type="text" name="edad_txt" id="edad" class="cambio" requierid>
+            <br><br>
+
+            <label>Email</label>
+            <input type="email" name="email_txt" id="email" class="cambio" requierid>
+
+            <br><br>
+            <label>Sexo</label>
+            <input type="radio" name="sexo_rdo" id="sexo" value = "M">  
+            <label>Masculino</label>
+            <input type="radio" name="sexo_rdo" id="sexo" value = "F">   
+            <label>Femenino</label>   
+            <br><br>
+            <label>Asunto</label>     
+            <input type="text" name="asunto_txt" id="asunto" class="cambio">
+            <br><br>
+            <textarea name="comentarios" id="comentarios" cols="50" rows="5"></textarea>
+            <br><br>
+            <input type="button" name="enviar" id="enviar" class="cambio" value="enviar">
+            <input type="button" name="limpiar" id="limpiar" class="cambio" value="limpiar"> 
+
+
+           
+        </div>
+
+    </fieldset>
+    </form>
+</body>
+
+</html>
+
